@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blackjack</title>
+    <script src="blackjack.js"></script>
+  </head>
+  <body>
+    <h1>Blackjack</h1>
+    <h2 id="gameStatus">Start a new game.</h2>
+
+    <div class="playerDeck">
+      <h2>Player score:</h2>
+      <span id="playerScore">0</span>
+    </div>
+
+    <div class="dealerDeck">
+      <h2>Dealer Score:</h2>
+      <span id="dealerScore">0</span>
+    </div>
+
+    <input onclick="updateScore()" id="drawButton" type="button" value="Draw" />
+    <input onclick="playerStay()" type="button" value="Stay" />
+    <input onclick="gameRestart()" type="button" value="Reset" />
+  </body>
+</html>
